@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     [Header("Events")]
     [SerializeField] UnityEvent onDeath;
 
+    [Header("Sounds")]
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip dashSound;
+    [SerializeField] AudioClip deathSound;
+
 
     private readonly int Walk = Animator.StringToHash(nameof(Walk));
     private readonly int Jump = Animator.StringToHash(nameof(Jump));
@@ -34,12 +39,14 @@ public class Player : MonoBehaviour
     SpriteRenderer sprite;
     Animator animator;
     new Rigidbody2D rigidbody;
+    AudioSource audioSource;
 
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         dashTimer = 0;
     }
@@ -54,6 +61,7 @@ public class Player : MonoBehaviour
         {
             canDash = false;
             PlayAnimation(Dash);
+            audioSource.PlayOneShot(dashSound);
             dashTimer = dashDuration;
         }
         else
@@ -91,6 +99,7 @@ public class Player : MonoBehaviour
             {
                 rigidbody.velocity += Vector2.up * jumpSpeed;
                 PlayAnimation(Jump);
+                audioSource.PlayOneShot(jumpSound);
             }
         }  
     }
@@ -135,6 +144,7 @@ public class Player : MonoBehaviour
         {
             PlayAnimation(Death);
             onDeath.Invoke();
+            audioSource.PlayOneShot(deathSound);
             Disable();
         }
     }
