@@ -339,9 +339,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -904564409
-  m_SortingLayer: -4
-  m_SortingOrder: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 57c4478f8cf2cb24aad1a906687e8d8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -590,10 +590,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -904564409
-  m_SortingLayer: -4
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 9401f52910aa8fb49a0d3500b5b68492, type: 3}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: dd4809df409f82647abf9c4e121878d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1198,9 +1198,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -275998735
-  m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -1709836214, guid: 806164aabda93ca459ed8e23fb85588c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1221,7 +1221,7 @@ Transform:
   m_GameObject: {fileID: 592989213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.81, y: -3.56, z: 0}
+  m_LocalPosition: {x: -20.63, y: -2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1644,7 +1644,7 @@ Transform:
   m_GameObject: {fileID: 818699675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.44347447, y: -1.16, z: -0.008797536}
+  m_LocalPosition: {x: 0.55, y: -0.6, z: -0.008797536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2809,7 +2809,7 @@ Transform:
   m_GameObject: {fileID: 1489608631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5165255, y: -1.12, z: -0.008797536}
+  m_LocalPosition: {x: 0.48, y: -0.66, z: -0.008797536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3436,7 +3436,7 @@ Transform:
   m_GameObject: {fileID: 1741077107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1, y: -1.2555256, z: -0.008797536}
+  m_LocalPosition: {x: -0.6365255, y: -0.58, z: -0.008797536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3505,6 +3505,18 @@ PrefabInstance:
     - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
       propertyPath: m_Size.x
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3826,9 +3838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d582bab0152884694d92e2eebc07da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 592989218}
-  multipliyer: 1
---- !u!1001 &2110728377
+  player: {fileID: 0}
+  multipliyer: 0.001
+--- !u!1001 &4180969198802021089
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3888,9 +3900,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
-      propertyPath: m_Size.x
-      value: 2
+    - target: {fileID: 1768443997754600525, guid: fc3f6905286d58040b443e6243f9ca99, type: 3}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 551247902}
+    - target: {fileID: 6196832020953545409, guid: fc3f6905286d58040b443e6243f9ca99, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196832020953545409, guid: fc3f6905286d58040b443e6243f9ca99, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196832020953545409, guid: fc3f6905286d58040b443e6243f9ca99, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323857378958986671, guid: fc3f6905286d58040b443e6243f9ca99, type: 3}
+      propertyPath: m_Name
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3916,6 +3944,10 @@ PrefabInstance:
     - target: {fileID: 3868283990624765197, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3304013778883236037, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4773566218054342102, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3958,8 +3990,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
-      propertyPath: m_Size.x
-      value: 1
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7958267955983304057, guid: b352a32ec42060a4d96f0e7d3485c614, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
