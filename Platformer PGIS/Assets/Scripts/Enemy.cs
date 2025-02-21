@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
 
-        if ((collider.bounds.max.x >= rightPoint.x && isGoingRight)|| (collider.bounds.min.x <= leftPoint.x && !isGoingRight))
+        if ((collider.bounds.max.x >= rightPoint.x && isGoingRight) || (collider.bounds.min.x <= leftPoint.x && !isGoingRight))
         {
             isGoingRight = !isGoingRight;
             transform.rotation = isGoingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
